@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ecran_offres_sauvegardees">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/haut_titre"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/haut_titre">
+
+        <ImageView
+            android:id="@+id/logo_principal_orange"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:contentDescription="LogoPrincipalOrange"
+            android:src="@drawable/logo_principal_orange" />
+
+        <ImageView
+            android:id="@+id/titre_noir_orange"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="LogoPrincipalOrange"
+            android:src="@drawable/titre_noir_orange" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haut_titre">
+
+        <TextView
+            android:id="@+id/details_offres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detailOffre"
+            android:textSize="18dp" />
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/btn_televerser">
+
+            <Button
+                android:id="@+id/postulerButton"
+                android:layout_width="92dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/postuler"
+                android:textColor="@color/orange"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_TitrePoste"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_Employeur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameTitle"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewTitrePoste"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/titrePoste" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_Employeur"
+        android:layout_width="409dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_ModeEmploi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_TitrePoste"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewEmployeur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/employeur" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_ModeEmploi"
+        android:layout_width="409dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/frame_Description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_Employeur"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewModeEmploi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modeEmploi" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_Description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_ModeEmploi"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/descriptionOffre" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bas_titre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_accueil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_accueil"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/page_actuelle"
+            android:layout_width="44dp"
+            android:layout_height="1.5dp"
+            android:layout_marginStart="183.5dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="page_actuelle"
+            android:src="@drawable/page_actuelle"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

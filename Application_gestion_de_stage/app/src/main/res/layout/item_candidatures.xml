@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/icone_boite"
+    >
+
+    <ImageButton
+        android:id="@+id/btn_supprimer"
+        android:layout_width="28dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="330dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_televerser">
+
+        <TextView
+            android:id="@+id/etatCandidature"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="10sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/entreprise_Candidature"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/lieu_candidature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/type_candidature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#808080"
+        android:textSize="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/description_candidature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="11dp" />
+
+
+</FrameLayout>

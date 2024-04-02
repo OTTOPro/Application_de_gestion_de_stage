@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ecran_accueil">
+
+    <fragment
+        android:id="@+id/ecran_recherche"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_recherche"
+        android:label="fragment_ecran_recherche"
+        tools:layout="@layout/fragment_ecran_recherche" >
+        <action
+            android:id="@+id/action_ecran_recherche_to_ecran_profil_etudiant"
+            app:destination="@id/ecran_profil_etudiant" />
+        <action
+            android:id="@+id/action_ecran_recherche_to_ecran_candidatures_et_offres_sauvegardees"
+            app:destination="@id/ecran_candidatures_et_offres_sauvegardees" />
+        <action
+            android:id="@+id/action_ecran_recherche_to_ecran_parametres"
+            app:destination="@id/ecran_parametres" />
+        <action
+            android:id="@+id/action_ecran_recherche_to_ecran_stage"
+            app:destination="@id/ecran_stage" />
+        <action
+            android:id="@+id/action_ecran_recherche_to_ecran_offres_sauvegardees"
+            app:destination="@id/ecran_offres_sauvegardees" />
+        <action
+            android:id="@+id/action_ecran_recherche_to_details_offre"
+            app:destination="@id/details_offre" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_profil_etudiant"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_profil_etudiant"
+        android:label="fragment_ecran_profil_etudiant"
+        tools:layout="@layout/fragment_ecran_profil_etudiant" >
+        <action
+            android:id="@+id/action_ecran_profil_etudiant_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+        <action
+            android:id="@+id/action_ecran_profil_etudiant_to_ecran_candidatures_et_offres_sauvegardees"
+            app:destination="@id/ecran_candidatures_et_offres_sauvegardees" />
+        <action
+            android:id="@+id/action_ecran_profil_etudiant_to_ecran_parametres"
+            app:destination="@id/ecran_parametres" />
+        <action
+            android:id="@+id/action_ecran_profil_etudiant_to_ecran_stage"
+            app:destination="@id/ecran_stage" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_accueil"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_accueil"
+        android:label="fragment_ecran_accueil"
+        tools:layout="@layout/fragment_ecran_accueil" >
+        <action
+            android:id="@+id/action_ecran_accueil_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_candidatures_et_offres_sauvegardees"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_candidatures_et_offres_sauvegardees"
+        android:label="fragment_ecran_candidatures_et_offres_sauvegardees"
+        tools:layout="@layout/fragment_ecran_candidatures_et_offres_sauvegardees" >
+        <action
+            android:id="@+id/action_ecran_candidatures_et_offres_sauvegardees_to_ecran_profil_etudiant"
+            app:destination="@id/ecran_profil_etudiant" />
+        <action
+            android:id="@+id/action_ecran_candidatures_et_offres_sauvegardees_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+        <action
+            android:id="@+id/action_ecran_candidatures_et_offres_sauvegardees_to_ecran_parametres"
+            app:destination="@id/ecran_parametres" />
+        <action
+            android:id="@+id/action_ecran_candidatures_et_offres_sauvegardees_to_ecran_stage"
+            app:destination="@id/ecran_stage" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_parametres"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_parametres"
+        android:label="fragment_ecran_parametres"
+        tools:layout="@layout/fragment_ecran_parametres" >
+        <action
+            android:id="@+id/action_ecran_parametres_to_ecran_candidatures_et_offres_sauvegardees"
+            app:destination="@id/ecran_candidatures_et_offres_sauvegardees" />
+        <action
+            android:id="@+id/action_ecran_parametres_to_ecran_profil_etudiant"
+            app:destination="@id/ecran_profil_etudiant" />
+        <action
+            android:id="@+id/action_ecran_parametres_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+        <action
+            android:id="@+id/action_ecran_parametres_to_ecran_stage"
+            app:destination="@id/ecran_stage" />
+        <action
+            android:id="@+id/action_ecran_parametres_to_ecran_accueil"
+            app:destination="@id/ecran_accueil" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_stage"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_stage"
+        android:label="fragment_ecran_stage"
+        tools:layout="@layout/fragment_ecran_stage" >
+        <action
+            android:id="@+id/action_ecran_stage_to_ecran_candidatures_et_offres_sauvegardees"
+            app:destination="@id/ecran_candidatures_et_offres_sauvegardees" />
+        <action
+            android:id="@+id/action_ecran_stage_to_ecran_parametres"
+            app:destination="@id/ecran_parametres" />
+        <action
+            android:id="@+id/action_ecran_stage_to_ecran_profil_etudiant"
+            app:destination="@id/ecran_profil_etudiant" />
+        <action
+            android:id="@+id/action_ecran_stage_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+    </fragment>
+    <fragment
+        android:id="@+id/ecran_offres_sauvegardees"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.ecran_offres_sauvegardees"
+        android:label="fragment_ecran_offres_sauvegardees"
+        tools:layout="@layout/fragment_ecran_offres_sauvegardees" >
+        <action
+            android:id="@+id/action_ecran_offres_sauvegardees_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+    </fragment>
+    <fragment
+        android:id="@+id/details_offre"
+        android:name="crosemont.dti.g55.application_gestion_de_stage.details_offre"
+        android:label="fragment_details_offre"
+        tools:layout="@layout/fragment_details_offre" >
+        <action
+            android:id="@+id/action_details_offre_to_ecran_recherche"
+            app:destination="@id/ecran_recherche" />
+    </fragment>
+</navigation>

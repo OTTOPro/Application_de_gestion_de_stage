@@ -1,0 +1,37 @@
+<resources>
+    <string name="URL_API" translatable="false">http://192.168.2.60:8080</string>
+    <string name="URL_AUTH" translatable="false">https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token</string>
+    <string name="app_name">Application_gestion_de_stage</string>
+    <string name="votreProfil">Votre Profil</string>
+    <string name="informationsPersonnelles">Informations Personnelles</string>
+    <string name="informationsScolaires">Informations scolaires</string>
+    <string name="documents">Documents</string>
+    <string name="lettreMotivationEtc">Curriculum vitae, Lettre de motivation etc.</string>
+    <string name="téléverserDocumenrts">Téléverser un document</string>
+    <string name="lien">Liens</string>
+    <string name="etatStageText">En cours de recherche</string>
+    <string name="detailOffre">Details de loffre</string>
+    <string name="titrePoste">Titre du poste</string>
+    <string name="employeur">Employeur</string>
+    <string name="modeEmploi">Mode Emploi</string>
+    <string name="descriptionOffre">Description de loffre</string>
+    <string name="postuler">Postuler</string>
+    <string name="slogan">Explorer vos opportunités</string>
+    <string name="courriel">Courriel</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="commencer">Commencez</string>
+    <string name="candidatures">Candidatures</string>
+    <string name="paramètres">Paramètres</string>
+    <string name="modeSombre">Mode Sombre</string>
+    <string name="titrePageRecherche">Trouvez votre stage idéal</string>
+    <string name="barreRecherche">mot-clé, entreprise, domaine...</string>
+    <string name="titreStage">Stage</string>
+    <string name="savoirPlus">En savoir plus</string>
+    <string name="contacter">contacter</string>
+    <string name="stageDébuté">Débuté</string>
+    <string name="stageEncours">Encours</string>
+    <string name="stageTerminé">Terminé</string>
+    <string name="déconnexion">Déconnexion</string>
+
+
+</resources>

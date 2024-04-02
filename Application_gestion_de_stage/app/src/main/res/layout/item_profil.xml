@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/photo_profil"
+            android:layout_width="178dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center"
+            android:contentDescription="IcônePhotoProfil"
+            android:src="@drawable/icone_photo_profil" />
+
+        <ImageButton
+            android:id="@+id/btnPhotoProfil"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="BtnPhotoProfil"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_importer_photo" />
+
+        <TextView
+            android:id="@+id/nomPrenomEtudiant"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/icone_boite">
+
+        <TextView
+            android:id="@+id/InformationPersonnelles"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/informationsPersonnelles"
+            android:textSize="12dp" />
+
+
+
+        <ImageView
+            android:id="@+id/icone_courriel"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneCourriel"
+            android:src="@drawable/icone_courriel" />
+
+
+        <TextView
+            android:id="@+id/courriel_etudiant"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/icone_telephone"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneTéléphone"
+            android:src="@drawable/icone_telephone" />
+
+        <TextView
+            android:id="@+id/telephone_etudiant"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/icone_lieu"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneLieu"
+            android:src="@drawable/icone_lieu" />
+
+        <TextView
+            android:id="@+id/adresse_etudiant"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/icone_transport"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneTransport"
+            android:src="@drawable/icone_transport"
+             />
+
+        <TextView
+            android:id="@+id/transport_etudiant"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/icone_langue"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneLangue"
+            android:src="@drawable/icone_langue" />
+
+        <TextView
+            android:id="@+id/langues_etudiant"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/icone_boite">
+
+        <TextView
+            android:id="@+id/InformationsScolaires"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/informationsScolaires"
+            android:textSize="12dp" />
+
+
+        <ImageView
+            android:id="@+id/icone_profil"
+            android:layout_width="13dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneCourriel"
+            android:src="@drawable/icone_profil" />
+
+
+        <TextView
+            android:id="@+id/profil_et_code_etudiant"
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/icone_stage"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="IcôneStage"
+            android:src="@drawable/icone_stage" />
+
+        <TextView
+            android:id="@+id/etat_stage_etudiant"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/icone_boite">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/documents"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/btn_modifier_documents_etudiants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icone_btn_modifier" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/lettreMotivationEtc"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_televerser">
+
+            <Button
+                android:id="@+id/btn_televerser_documents_etudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/téléverserDocumenrts"
+                android:textColor="@color/orange"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/lien"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/boite_entree"
+                android:hint="https://"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

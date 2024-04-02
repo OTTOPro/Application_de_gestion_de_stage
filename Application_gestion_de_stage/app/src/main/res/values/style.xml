@@ -1,0 +1,6 @@
+<!-- res/values-night/styles.xml -->
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="couleurModeSombre">#77655D</item>
+    </style>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Application_gestion_de_stage</string>
+    <string name="votreProfil">Your Profil</string>
+    <string name="informationsPersonnelles">Personal Information</string>
+    <string name="informationsScolaires">School Information</string>
+    <string name="documents">Documents</string>
+    <string name="lettreMotivationEtc">Curriculum vitae, Cover letter etc.</string>
+    <string name="téléverserDocumenrts">Upload a document</string>
+    <string name="lien">Links</string>
+    <string name="etatStageText">Looking for an internship</string>
+    <string name="detailOffre">Job Offer Details</string>
+    <string name="titrePoste">Job Title</string>
+    <string name="employeur">Employer</string>
+    <string name="modeEmploi">Work Setup</string>
+    <string name="descriptionOffre">Job Offer Description</string>
+    <string name="postuler">Apply</string>
+    <string name="slogan">Explor your opportunities</string>
+    <string name="courriel">E-mail</string>
+    <string name="mdp">Password</string>
+    <string name="commencer">Start</string>
+    <string name="candidatures">Candidacies</string>
+    <string name="paramètres">Settings</string>
+    <string name="modeSombre">Dark Mode</string>
+    <string name="titrePageRecherche">Find Your Ideal Internship</string>
+    <string name="barreRecherche">key words, company name, domain ...</string>
+    <string name="titreStage">Internship</string>
+    <string name="savoirPlus">See More</string>
+    <string name="contacter">Contact</string>
+    <string name="stageDébuté">Started</string>
+    <string name="stageEncours">Ongoing</string>
+    <string name="stageTerminé">Finished</string>
+    <string name="déconnexion">Log Out</string>
+
+</resources>

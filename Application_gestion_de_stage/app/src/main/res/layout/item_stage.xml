@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/icone_boite">
+
+    <TextView
+        android:id="@+id/pas_de_stage_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vous n'avez pas encore un stage"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titre_du_poste_et_nom_entreprise"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/icone_calendier"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="IcôneCalendrier"
+        android:src="@drawable/icone_calendrier" />
+
+    <TextView
+        android:id="@+id/date_début_et_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/icone_superviseur"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="IcôneSuperviseur"
+        android:src="@drawable/icone_superviseur" />
+
+    <TextView
+        android:id="@+id/nom_prenom_superviseur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="10dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="72dp"
+
+        android:background="@drawable/btn_televerser">
+
+        <Button
+            android:id="@+id/contacter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/contacter"
+            android:textColor="@color/orange"
+            android:textSize="8sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/icone_lieu"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Icônelieu"
+        android:src="@drawable/icone_lieu" />
+
+    <TextView
+        android:id="@+id/adresse_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/icone_progression"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="IcôneCourriel"
+        android:src="@drawable/icone_progression_stage" />
+
+    <ImageView
+        android:id="@+id/cercle_débuté_progression_stage"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/cercle_stage_progression"/>
+
+    <ImageView
+        android:id="@+id/coche_débuté"
+        android:layout_width="8dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/coche_stage_progression"
+        android:scaleType="fitCenter"
+        android:contentDescription="Checkmark"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/texte_débuté_stage_progression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/stageDébuté"
+        android:textColor="#808080"
+        android:textSize="5dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/ligne1_progression_stage"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/ligne_stage_progression" />
+
+    <ImageView
+        android:id="@+id/cercle_encours_progression_stage"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/cercle_stage_progression" />
+
+    <ImageView
+        android:id="@+id/coche_encours"
+        android:layout_width="8dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/coche_stage_progression"
+        android:scaleType="fitCenter"
+        android:contentDescription="Checkmark"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/texte_encours_stage_progression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154.5dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/stageEncours"
+        android:textColor="#808080"
+        android:textSize="5dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/ligne2_progression_stage"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/ligne_stage_progression" />
+
+    <ImageView
+        android:id="@+id/cercle_terminé_progression_stage"
+        android:layout_width="18dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/cercle_stage_progression" />
+
+    <ImageView
+        android:id="@+id/coche_terminé"
+        android:layout_width="8dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/coche_stage_progression"
+        android:scaleType="fitCenter"
+        android:contentDescription="Checkmark"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/texte_terminé_stage_progression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/stageTerminé"
+        android:textColor="#808080"
+        android:textSize="5dp"
+        android:textStyle="normal" />
+
+</FrameLayout>

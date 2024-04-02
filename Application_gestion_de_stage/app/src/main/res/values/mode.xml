@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="modeSombre">
+        <attr name="couleurModeSombre" format="color"/>
+        <attr name="couleurTexte" format="color"/>
+    </declare-styleable>
+</resources>

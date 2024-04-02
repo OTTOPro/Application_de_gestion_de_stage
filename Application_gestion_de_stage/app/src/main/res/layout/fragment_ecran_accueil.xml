@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/logo_principal_blanc"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="125dp"
+            android:contentDescription="LogoPrincipalBlanc"
+            android:src="@drawable/logo_principal_blanc" />
+
+        <ImageView
+            android:id="@+id/titre_noir_blanc"
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:contentDescription="TitreNoirBlanc"
+            android:src="@drawable/titre_noir_blanc" />
+
+    <ImageView
+        android:id="@+id/slogan_fr"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-30dp"
+        android:contentDescription="@string/slogan"
+        android:src="@drawable/slogan_fr" />
+
+    <EditText
+        android:id="@+id/editCourriel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="@string/courriel"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editMotDePasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="135dp"
+        android:ems="10"
+        android:hint="@string/mdp"
+        android:inputType="textPassword" />
+
+    <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/btn_commencez">
+
+        <Button
+            android:id="@+id/btn_commencer"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/commencer"
+            android:textColor="@color/white_orange"
+            android:textSize="16sp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+

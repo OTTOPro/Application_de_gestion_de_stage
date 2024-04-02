@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ecran_parametres">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/haut_titre"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/haut_titre">
+
+        <ImageView
+            android:id="@+id/logo_principal_orange"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:contentDescription="LogoPrincipalOrange"
+            android:src="@drawable/logo_principal_orange" />
+
+        <ImageView
+            android:id="@+id/titre_noir_orange"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="LogoPrincipalOrange"
+            android:src="@drawable/titre_noir_orange" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/haut_titre">
+
+        <TextView
+            android:id="@+id/paramètres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paramètres"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_paramètres"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameTitle">
+
+        <Switch
+            android:id="@+id/basculerModeSombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/modeSombre" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_parassmètres"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameTitle">
+
+        <Switch
+            android:id="@+id/basculerMossdeSombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/modeSombre" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="200dp"
+
+        android:background="@drawable/btn_televerser">
+
+        <Button
+            android:id="@+id/btn_déconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/déconnexion"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bas_titre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btn_accueil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_accueil"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_profil"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_profil"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_stage"
+                android:layout_width="44dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_stage"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_candidatures"
+                android:layout_width="44dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_candidature"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_preferences"
+                android:layout_width="44dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:background="@color/orange_faible"
+                android:src="@drawable/icone_btn_parametre"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/page_actuelle"
+            android:layout_width="44dp"
+            android:layout_height="1.5dp"
+            android:layout_marginStart="347dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="page_actuelle"
+            android:src="@drawable/page_actuelle"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

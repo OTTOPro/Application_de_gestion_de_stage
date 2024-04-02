@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:background="@drawable/haut_titre">
+
+                <ImageView
+                    android:id="@+id/logo_principal_orange"
+                    android:layout_width="73dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:contentDescription="LogoPrincipalOrange"
+                    android:src="@drawable/logo_principal_orange" />
+
+                <ImageView
+                    android:id="@+id/titre_noir_orange"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="LogoPrincipalOrange"
+                    android:src="@drawable/titre_noir_orange" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bas_titre">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/icone_btn_accueil"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:background="@color/orange_faible"
+                    android:src="@drawable/icone_btn_accueil"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@color/orange_faible"
+                    android:src="@drawable/icone_btn_profil"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_width="44dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+
+                    android:background="@color/orange_faible"
+                    android:src="@drawable/icone_btn_stage"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button5"
+                    android:layout_width="44dp"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+
+                    android:background="@color/orange_faible"
+                    android:src="@drawable/icone_btn_candidature"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/button6"
+                    android:layout_width="44dp"
+                    android:layout_height="34dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:background="@color/orange_faible"
+                    android:src="@drawable/icone_btn_parametre"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/page_actuelle"
+                android:layout_width="44dp"
+                android:layout_height="1.5dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="60dp"
+                android:contentDescription="page_actuelle"
+                android:src="@drawable/page_actuelle"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Ecran_profil">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/votreProfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/votreProfil"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/icone_photo_profil"
+                    android:layout_width="63dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="IcônePhotoProfil"
+                    android:src="@drawable/icone_photo_profil" />
+
+                <ImageButton
+                    android:id="@+id/btnPhotoProfil"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="BtnPhotoProfil"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_importer_photo" />
+
+                <TextView
+                    android:id="@+id/nomPrenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Jean Dupont"
+                    android:textSize="18dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/icone_boite">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/informationsPersonnelles"
+                    android:textSize="12dp" />
+
+                <ImageButton
+                    android:id="@+id/icone_btn_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="345dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/icone_btn_modifier" />
+
+                <ImageView
+                    android:id="@+id/icone_courriel"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneCourriel"
+                    android:src="@drawable/icone_courriel" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="jean.dupont@exemple.com"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <ImageView
+                    android:id="@+id/icone_telephone"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneTéléphone"
+                    android:src="@drawable/icone_telephone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="63dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="+ (514) 123-4567"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/icone_lieu"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneLieu"
+                    android:src="@drawable/icone_lieu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="83dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Montréal, Qc"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <ImageView
+                    android:id="@+id/icone_transport"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneTransport"
+                    android:src="@drawable/icone_transport"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="103dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:text="Transport en commun"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+                <ImageView
+                    android:id="@+id/icone_langue"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneLangue"
+                    android:src="@drawable/icone_langue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="122dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Français, anglais"
+                    android:textColor="#000000"
+                    android:textSize="11dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/icone_boite">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Informations scolaires"
+                    android:textSize="12dp"
+                    tools:ignore="DuplicateIds" />
+
+                <ImageView
+                    android:id="@+id/icone_profil"
+                    android:layout_width="13dp"
+                    android:layout_height="11dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneCourriel"
+                    android:src="@drawable/icone_profil" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="1234567 - Développement d’applications Web et Mobiles"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:id="@+id/icone_stage"
+                    android:layout_width="15dp"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="IcôneStage"
+                    android:src="@drawable/icone_stage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="En cours/accepté/refusé"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/icone_boite">
+
+                <TextView
+                    android:id="@+id/textVieww"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Documents"
+                    android:textSize="12dp"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Curriculum vitae, Lettre de motivation etc."
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_televerser">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="Téléverser un document"
+                        android:textColor="@color/orange"
+                        android:textSize="10sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Liens:"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="110dp"
+                        android:background="@drawable/boite_entree"
+                        android:hint="https://"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textColor="#000000"
+                        android:textSize="10sp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
